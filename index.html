@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/3ea353913d.js" crossorigin="anonymous"></script>
+    <title>Instagram Photo Feed</title>
+</head>
+
+<body>
+    <!-- novar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div>
+                <i class="fa fa-instagram"></i>
+                <a class="navbar-brand" href="#">Instagram</a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="dropdown d-flex justify-content-end">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-gear"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><a class="dropdown-item text-danger border-secondary border-top pt-3" href="#">Logout</a></li>
+                    </ul>
+                </div>
+
+
+                <form class="d-flex" role="search">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new Post.
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                        Create a new post
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Caption<br /><br />
+                                    <div class="caption-post">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+                                    <div class="iconos">
+                                        <i class="fa fa-camera"></i>
+                                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            Publish.
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <i class="fa fa-border-none"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <i class="fa fa-square"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2020/03/31/11/59/sunrise-4987384__480.jpg" alt="..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6-uhYMgoNPT8T6lpbbbzTn3vkhLpbkSmZUNRN8B4uRpr0WNJc-k7PUp3HZXReUCidlA&usqp=CAU" alt=" ..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/98/39/53/98395385b7461e5cec6673d8b9d93b83.jpg" alt="..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/55/3f/62/553f628ae350401794d5b41f3f4b6651--red-cloud-clouds.jpg" alt=" ..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" alt=" ..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/38/4f/28/384f28c8e83a51253a7764fa59eb0e6b--beautiful-sunset-most-beautiful.jpg" alt="..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/01/mountains-736886__480.jpg" class="card-img-top" alt="..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__480.jpg" class="card-img-top" alt="..." />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2022/03/06/11/21/buttermere-7051403__480.jpg" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <!-- Primer post -->
+            <div>
+                <div class="row flex-column" style="background-color: rgb(237 231 231); ">
+                    <div class="card container ps-0 pe-0" style="width: 28rem; margin-top: 20px;margin-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-6"> <span>My first photo</span> </div>
+                            <div class="col-6 text-end"> <span class="text-muted">1/09</span> </div> <img src="https://4.bp.blogspot.com/-51Pz4mT4kVk/U63PM6FXw8I/AAAAAAAA5pI/03TMlLN0R_Q/s1600/Hermosos-paisajes-cascadas-wallpapers-Fairy_Pools_Escocia.jpg">
+                            <div class="card-body pt-0 pb-0">
+                                <p class="card-text ">
+                                    <h6>20 Likes</h6>
+                                </p>
+                                <p>This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #breatheCode</p>
+                                <div class="row ">
+                                    <div class="col-1 text-muted"><i class="bi bi-heart"></i></div>
+                                    <div class="col text-muted text-start">Comment...</div>
+                                    <div class="col text-end text-muted"><i class="bi bi-list-ul"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container ps-0 pe-0" style="width: 28rem; margin-top: 20px;margin-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-6"> <span>My first photo</span> </div>
+                            <div class="col-6 text-end"> <span class="text-muted">1/09</span> </div> <img src="https://imagenpng.com/wp-content/uploads/2017/01/Tranquil_Lagoon_Bora_.jpg">
+                            <div class="card-body pt-0 pb-0">
+                                <p class="card-text ">
+                                    <h6>20 Likes</h6>
+                                </p>
+                                <p>This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #breatheCode</p>
+                                <div class="row ">
+                                    <div class="col-1 text-muted"><i class="bi bi-heart"></i></div>
+                                    <div class="col text-muted text-start">Comment...</div>
+                                    <div class="col text-end text-muted"><i class="bi bi-list-ul"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container ps-0 pe-0" style="width: 28rem; margin-top: 20px;margin-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-6"> <span>My first photo</span> </div>
+                            <div class="col-6 text-end"> <span class="text-muted">1/09</span> </div> <img src="https://media.istockphoto.com/id/508353899/es/foto/bah%C3%ADa-de-hanauma.jpg?b=1&s=170667a&w=0&k=20&c=SwliuIdy1tAc7MUgbrpICfvYX_KbgMT-caM_n0CZA_Y=">
+                            <div class="card-body pt-0 pb-0">
+                                <p class="card-text ">
+                                    <h6>20 Likes</h6>
+                                </p>
+                                <p>This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #breatheCode</p>
+                                <div class="row ">
+                                    <div class="col-1 text-muted"><i class="bi bi-heart"></i></div>
+                                    <div class="col text-muted text-start">Comment...</div>
+                                    <div class="col text-end text-muted"><i class="bi bi-list-ul"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container ps-0 pe-0" style="width: 28rem; margin-top: 20px;margin-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-6"> <span>My first photo</span> </div>
+                            <div class="col-6 text-end"> <span class="text-muted">1/09</span> </div> <img src="https://i.pinimg.com/originals/60/ea/19/60ea1975131154ef97d0d6e32397352b.jpg">
+                            <div class="card-body pt-0 pb-0">
+                                <p class="card-text ">
+                                    <h6>20 Likes</h6>
+                                </p>
+                                <p>This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #breatheCode</p>
+                                <div class="row ">
+                                    <div class="col-1 text-muted"><i class="bi bi-heart"></i></div>
+                                    <div class="col text-muted text-start">Comment...</div>
+                                    <div class="col text-end text-muted"><i class="bi bi-list-ul"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- java -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
